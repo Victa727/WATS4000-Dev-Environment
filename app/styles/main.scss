@@ -2,6 +2,18 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+// Override Bootstrap variables
+@import "variables";
+
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
+
 // endbower
 
 .browsehappy {
@@ -36,6 +48,12 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
+}
+
+/* Make the h1 headers green */
+.jumbotron h1 {
+      color: green;
+
 }
 
 /* Custom page footer */
